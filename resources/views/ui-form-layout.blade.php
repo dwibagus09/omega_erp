@@ -68,6 +68,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="col-12 col-lg-6">
             <div class="card h-100 mb-0">
                 <div class="card-header">
