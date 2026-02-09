@@ -17,7 +17,7 @@ Route::get('/form-layout', function () {
     return view('pendaftaran_klien.index');
 });
 
-Route::post('/sampel/store', [ClientSampelController::class, 'store']);
+Route::post('/sampel/store', [ClientSampelController::class, 'store'])->name('sampel.store');
 
 Route::get('/tim', [TimController::class, 'index'])->name('tim.index');
 Route::get('/tim/{id}', [TimController::class, 'detail'])->name('tim.detail');

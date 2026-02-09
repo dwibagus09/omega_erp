@@ -27,7 +27,7 @@
             {{ session('success') }}
         </div>
     @endif
-                <form action="/sampel/store" method="POST">
+                <form action="{{ route('sampel.store') }}" method="POST">
                     @csrf
 
                     <div class="row g-4">
