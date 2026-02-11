@@ -3,8 +3,8 @@
 @section('title', 'Sampel Order')
 
 @section('sub-title', 'Sampel Order')
-@section('pagetitle', 'Home')
-@section('buttonTitle', 'Share')
+@section('pagetitle', 'Beranda')
+@section('buttonTitle', 'Pesanan Sampel')
 @section('modalTarget', 'shareModal')
 
 @section('css')
@@ -13,6 +13,7 @@
 @endsection
 
 @section('content')
+
 <div class="row g-4">
     <div class="col-12">
         <div class="card p-4">

@@ -7,13 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClientSampel extends Model
 {
-    use HasFactory;
+   use App\Models\ClientSampel;
 
-    protected $table = 'client_sampel';
-
-    protected $fillable = [
-        'nama_klien',
-        'nama_brand',
-        'sampel_produk',
-    ];
+public function index()
+{
+    $data = ClientSampel::all(); // AMBIL SEMUA DATA DARI DB
+    return view('tim.index', compact('data'));
+}
+public function show($id)
+    {
+        $data = ClientSampel::find($id);
+        return view('tim.show', compact('data'));
+    }
 }

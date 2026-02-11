@@ -9,19 +9,21 @@
 
             <h4 class="mb-4">Edit Sampel Order</h4>
 
-            <form action="{{ route('tim.update', $id) }}" method="POST">
+          <form action="{{ route('tim.update', $data->id) }}" method="POST">
+
                 @csrf
 
                 <div class="mb-3">
                     <label class="form-label">Nama Klien</label>
                     <input type="text" class="form-control" name="nama_klien"
-                        value="{{ $nama_klien }}">
+                        value="{{ $data->nama_pelanggan }}">
+
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Nama Brand</label>
                     <input type="text" class="form-control" name="nama_brand"
-                        value="{{ $nama_brand }}">
+                       value="{{ $data->nama_brand ?? '' }}">
                 </div>
                 <div class="mb-3">
     <label class="form-label">Sampel Produk & Spesifikasi</label>
