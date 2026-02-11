@@ -25,4 +25,10 @@ class TimController extends Controller
         $data = DB::table('pesanan_sampel')->where('id', $id)->first();
         return view('tim.edit', compact('data'));
     }
+    public function hapus($id)
+{
+    DB::table('pesanan_sampel')->where('id', $id)->delete();
+    return redirect()->back()->with('success','Data berhasil dihapus');
+}
+
 }

@@ -29,6 +29,8 @@ Route::prefix('marketing')->group(function() {
 Route::get('pesanan-sampel', [PesananSampelController::class, 'index'])->name('marketing.pesanan_sampel.index');
 Route::prefix('marketing')->group(function() {
 Route::get('/marketing/tim', [TimController::class, 'index']);
+Route::delete('/tim/hapus/{id}', [TimController::class, 'hapus'])->name('tim.hapus');
+
 
 
 });
