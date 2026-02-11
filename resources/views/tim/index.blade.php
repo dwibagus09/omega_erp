@@ -43,10 +43,14 @@
                         </a>
 
                         <form action="{{ route('tim.hapus', $item->id) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
-                        </form>
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="btn btn-danger btn-sm"
+        onclick="return confirm('Yakin ingin menghapus data ini?')">
+        Hapus
+    </button>
+</form>
+
                     </td>
                 </tr>
                 @endforeach
